@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* Fonte de destaque */
+@font-face {
+    font-family: 'bruxona';
+    src: url('files/fonte/hallowitchz/HalloWitchZ.ttf') format('truetype');
+}
+
+/* Fonte padrão */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+
+/* Criando variáveis CSS de cor e fonte */
+:root {
+    --cor1:rgb(255, 254, 254);
+    --cor2:rgb(175, 175, 175);
+    --cor3:gray;
+    --cor4:rgb(33, 33, 33);
+    --grifinoria:darkred;
+    --sonserina:darkgreen;
+    --lufalufa:rgb(206, 164, 6);
+    --corvinal:rgb(6, 6, 116);
+
+    --fonte-padrao: 'Roboto Flex', sans-serif;
+    --fonte-destaque: 'bruxona', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor2);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    color: var(--cor1);
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 5em;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 0.7em;
+    text-align: center;
+}
+
+nav > a {
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 0.3em 0.8em;
+    margin: 0.3em 0.4em;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor4);
+    transition-duration: 0.4s;
+}
+
+main {
+    background-color: var(--cor1);
+    width: 80%;
+    margin: auto;
+    padding: 0.4em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 1em;
+}
+
+main h1, h2 {
+    font-family: var(--fonte-destaque);
+    padding: 0.2em;
+    margin: 0.1em;
+    font-size: 4em;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 0.2em;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+main a {
+    text-decoration: none;
+    background-color: var(--cor2);
+    font-weight: bold;
+    color: black;
+}
+
+main a.linkexterno::after {
+    content: '\1F517';
+}
+
+h2#grifinoria {
+    color: var(--grifinoria);
+}
+h2#lufalufa {
+    color: var(--lufalufa);
+}
+h2#sonserina {
+    color: var(--sonserina);
+}
+h2#corvinal {
+    color: var(--corvinal);
+}
+
+main img {
+    margin: auto;
+    padding: 0.2em;
+    display: block;
+}
+
+aside {
+    background-color: var(--cor2);
+    width: 90%;
+    margin: auto;
+    font-size: 1em;
+    border-radius: 15px;
+}
+
+aside h2 {
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor4);
+    padding: 0.7em;
+    margin: 0em;
+    font-size: 1.5em;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+aside ul {
+    list-style-position: inside;
+    padding: 0.5em;
+    columns: 2;
+    font-size: 1.5em;
+}
+
+aside li.bigfive {
+    list-style-type: '\2728\00A0';
+}
+
+aside li.darktriad {
+    list-style-type: '\1F608\00A0';
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    background-color: white;
+    color: black;
+}
